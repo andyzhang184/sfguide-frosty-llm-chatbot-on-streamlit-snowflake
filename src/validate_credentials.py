@@ -3,9 +3,9 @@ from openai import OpenAI
 
 ## Validate Snowflake connection ##
 
-conn = st.connection("snowflake")
-df = conn.query("select current_warehouse()")
-st.write(df)
+# conn = st.connection("snowflake")
+# df = conn.query("select current_warehouse()")
+# st.write(df)
 
 ## Validate OpenAI connection ##
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
